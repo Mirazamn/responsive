@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.container {
+    width: 95%;
+    margin: 40px auto;
+}
+
+
+.flex {
+    display: flex;
+}
+
+
+body {
+    background-color: #000;
+}
+
+
+/* General Box Styles */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+
+.box {
+    width:  150px;
+    height: 150px;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    padding: 60px;
+}
+
+/* Box Styles When 950px */
+@media (max-width:950px) {
+    body {
+        background-color: yellow;
+    }
+
+
+    .cards {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px 0;
+    }
+
+
+    .box {
+        background-color: blue;
+        width: 250px;
+        height: 150px;
+    }
+}
+
+
+/* Box Styles When 790px */
+@media (max-width:790px) {
+    body {
+        background-color: red;
+    }
+
+    .box {
+        background-color: black;
+        width: 200px;
+        height: 100px;
+    }
+}
+
+
+/* Box Styles When 632px */
+@media (max-width:632px) {
+    body {
+        background-color: yellow;
+    }
+
+    .box {
+        background-color: blue;
+        width: 150px;
+        height: 50px;
+    }
+}
+
+
+/* Box Styles When 473px */
+@media (max-width:473px) {
+    body {
+        background-color: purple;
+    }
+
+
+    .cards {
+        justify-content: center;
+        gap: 10px;
+    }
+
+
+    .box {
+        background-color:tan;
+    }
+}
+
+
+/* Box Styles When 326px */
+@media (max-width:326px) {
+    .box {
+        width: 90%;
+    }
+}
